@@ -7,9 +7,11 @@ function App() {
 
   return (
     <div className="App" class="bg-zinc-800 h-full w-full m-0 box-border">
-       <nav class="fixed top-0 left-0 w-full shadow-xl backdrop-blur-lg z-20">
-          <div class="container m-auto flex justify-between items-center text-gray-100"> 
-                <a class="p-6" href="">Marta Tattoo</a>
+       <nav class="fixed top-0 left-0 w-full shadow-xl backdrop-blur-lg z-50">
+          <div class="container m-auto flex justify-between items-center text-gray-100 z-50" > 
+                <a class="" href="">
+                  <img src="../public/logo-tattoo.png" alt="Marta Sayuri" class="h-16 w-16" />
+                </a>
           
               <ul class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
                   <li class="hover:bg-blue-800 py-4 px-6">
@@ -62,7 +64,7 @@ function App() {
       
       <video src="../public/video-site2.mp4" muted loop autoPlay class=" w-full min-w-[800px] absolute top-0 z-0"></video>
         
-      <div class="container flex-col mx-auto text z-40 relative h-auto align-middle lg:pt-96 pt-28 lg:pl-5">
+      <div class="container flex-col mx-auto text z-30 relative h-auto align-middle lg:pt-96 pt-28 lg:pl-5">
         <h1 class="text-5xl lg:text-8xl text-cyan-50 font-extrabold px-6 md:p-0 tracking-wide">Levando arte a sério</h1>
         <p class="text-3xl text-cyan-50 px-6 font-extralight md:p-0 lg:mt-5 my-5 tracking-wide">tatuando com excelência desde 2018.</p>
       </div>
