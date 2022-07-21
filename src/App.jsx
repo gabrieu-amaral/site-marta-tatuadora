@@ -21,7 +21,7 @@ function App() {
                         </li>
 
                         <li class="hover:bg-blue-800py-4 px-6">
-                                <a href="#missao">Missão</a>
+                                <a href="#missao">Flash's</a>
                         </li>
 
                         <li class="hover:bg-blue-800 py-4 px-6">
@@ -48,7 +48,7 @@ function App() {
                                 </li>
 
                                 <li class="hover:bg-blue-800 py-4 px-6">
-                                        <a href="#missao">Missão</a>
+                                        <a href="#missao">Flash's</a>
                                 </li>
 
                                 <li class="hover:bg-blue-800 py-4 px-6">
