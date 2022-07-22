@@ -3,7 +3,12 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+        var feed = new Instafeed({
+                // insert your Instatram accessToken here
+                accessToken: 'martasayuritattoo'
+                // More options here
+            });
+            feed.run();
 
   return (
     <div className="App" class="bg-zinc-800 h-full w-full m-0 box-border">
@@ -82,6 +87,10 @@ function App() {
 
         <div class="lg:p-16 p-5">
                 <h2 class="text-5xl font-bold text-orange-100 mb-2">Faça um orçamento</h2>
+
+                <div>
+                        <div id="instafeed"></div>
+                </div>
         </div>
         
       </section>
