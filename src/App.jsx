@@ -62,7 +62,7 @@ function App() {
         </nav>
 
         <section id="home">
-                <video src="../public/video-site2.mp4" muted loop autoPlay className=" w-full min-w-[600px] fixed top-0 z-0 bg-contain overflow-hidden"></video>
+                <video src="/video-site2.mp4" muted loop autoPlay className=" w-full min-w-[600px] fixed top-0 z-0 bg-contain overflow-hidden"></video>
 
         
                 <div className="container flex-col mx-auto text z-30 relative h-auto align-middle lg:pt-96 pt-20 lg:pl-5">
