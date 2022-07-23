@@ -10,7 +10,7 @@ function App() {
        <nav className="fixed top-0 left-0 w-full backdrop-blur-lg z-50">
           <div className="container m-auto flex justify-between items-center text-gray-100 z-50" > 
                 <a className="pl-4" href="">
-                  <img src="/logo-tattoo.png" alt="Marta Sayuri" className=" h-16 w-16" />
+                  <img src="/logo-tattoo.png" alt="Marta Sayuri" className=" md:h-16 md:w-16 h-12 w-12" />
                 </a>
           
               <ul className="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
@@ -33,7 +33,7 @@ function App() {
 
               {/*mobile menu*/}
 
-              <button className="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-red-700 group">
+              <button className="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-red-500 group">
                   <div className="w-6 h-0.5 bg-gray-200 mb-1"></div>
                   <div className="w-6 h-0.5 bg-gray-200 mb-1"></div>
                   <div className="w-6 h-0.5 bg-gray-200"></div>
