@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import InstaFeed from './Insta/InstaFeed'
+
 
 function App() {
-        
+
 
   return (
     <div className="bg-zinc-900 h-full w-full m-0 box-border">
@@ -84,6 +86,7 @@ function App() {
                 <h2 className="text-5xl font-bold text-orange-100 mb-2">Faça um orçamento</h2>
 
                 <div>
+                        <InstaFeed />
                        
                 </div>
         </div>
