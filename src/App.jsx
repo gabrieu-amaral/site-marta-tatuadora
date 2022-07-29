@@ -73,21 +73,39 @@ function App() {
                 </div>
         </section>
 
-      <section id="sobre" className="container relative grid grid-cols-1 lg:grid-cols-2 m-auto h-auto z-60 bg-zinc-900 md:rounded-3xl lg:mt-64 md:mt-40 mt-16 shadow-xl w-screen mb-28">
+      <section id="sobre" className="container relative grid grid-cols-1 lg:grid-cols-2 m-auto mb-32 h-auto z-60 bg-zinc-900">
         <div className="lg:p-16 p-5">
                 <h2 className="text-5xl font-bold text-orange-100 mb-2">Marta Sayuri</h2>
                 <h3 className="text-2xl font-regular text-orange-300 mb-4">tatuadora</h3>
                 <p className="text-md text-orange-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum neque officia, dolore corporis at cum illum non sit fugit praesentium quos quia odio ad repellat voluptatum molestias culpa voluptatem eaque.</p>
         </div>
 
-        <img src="/profile-photo.png" alt="" className="lg:p-16 p-5 w-64 h-64 lg:h-80 lg:w-80 m-auto"/>
+        <div class="flex flex-col items-center space-y-1 mt-16">
+                <div class="relative bg-gradient-to-tr from-yellow-400 to-purple-600 transform transition p-1 hover:p-2 rounded-full w-auto h-auto">
+                        <a href="#" class="block bg-zinc-900 p-1 rounded-full transform transition hover:rotate-6">
+                                <img src="/profile-photo.png" alt="" className="lg:p-0 p-0 w-48 h-48 lg:h-64 lg:w-64 m-0"/>
+                        </a>
+                </div>
+        </div>
+        
 
-        <div className="lg:p-16 p-5">
-                <h2 className="text-5xl font-bold text-orange-100 mb-2">Faça um orçamento</h2>
+        <div className="lg:p-16 p-5 w-full mb-auto block">
+        
+                <h2 className="text-5xl font-bold text-orange-100 mb-4">Faça um orçamento</h2>
+                <p className="text-md text-orange-100 my-2">Sabe aquela arte que você sempre sonhou, você pode encomendar ela, eu desenho, te mostro e depois tatuamos.</p>
+                <p className="text-md text-orange-100">Mas se você estiver sem muitas ideias, não tem problema. Tenho muitos flashs prontos para tatuar</p>
+        
+        </div>
 
-                <div>
-                        <InstaFeed />
-                       
+        <div>
+                <div className="grid w-auto h-auto my-6 md:-mb-28 md:mt-10">
+                        <button className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 mx-auto text-white text-xl h-12">seguir Instagram</button>
+                        <button className="rounded-full bg-slate-50 w-auto px-5 h-12 mx-auto mt-6 text-xl">direct Instagram</button>
+                </div>
+                
+                <div className="bg-black md:rounded-3xl md:m-16 md:w-auto h-full place-items-center">
+                        
+                        <InstaFeed className=""/>
                 </div>
         </div>
         
@@ -95,7 +113,7 @@ function App() {
 
       <footer id="footer" className="lg:p-24 p-16 pt-24 bg-zinc-900 relative">
                 <div>
-                    <div className="grid lg:grid-cols-2 md:grid-cols-2 w-auto items-center m-auto text-gray-500">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-2 w-auto items-center m-full text-gray-500">
                         <div className="col-span-1 w-auto flex">
 
                             <div className="">
