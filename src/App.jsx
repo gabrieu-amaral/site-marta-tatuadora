@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import InstaFeed from './Insta/InstaFeed'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faFacebookMessenger, faFacebook} from '@fortawesome/free-brands-svg-icons'
 
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
        <nav className="fixed top-0 left-0 w-full backdrop-blur-lg z-50">
           <div className="container m-auto flex justify-between items-center text-gray-100 z-50" > 
                 <a className="pl-4" href="">
-                  <img src="/logo-tattoo.png" alt="Marta Sayuri" className=" md:h-16 md:w-16 h-12 w-12" />
+                  <img src="/logo-tattoo.png" alt="Marta Sayuri" className="md:h-16 md:w-16 h-12 w-12" />
                 </a>
           
               <ul className="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
@@ -73,16 +75,16 @@ function App() {
                 </div>
         </section>
 
-      <section id="sobre" className="container relative grid grid-cols-1 lg:grid-cols-2 m-auto mb-32 h-auto z-60 bg-zinc-900">
+      <section id="sobre" className="container relative grid grid-cols-1 md:grid-cols-2 m-auto my-32 h-auto z-20 bg-zinc-900">
         <div className="lg:p-16 p-5">
                 <h2 className="text-5xl font-bold text-orange-100 mb-2">Marta Sayuri</h2>
                 <h3 className="text-2xl font-regular text-orange-300 mb-4">tatuadora</h3>
                 <p className="text-md text-orange-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum neque officia, dolore corporis at cum illum non sit fugit praesentium quos quia odio ad repellat voluptatum molestias culpa voluptatem eaque.</p>
         </div>
 
-        <div class="flex flex-col items-center space-y-1 mt-16">
-                <div class="relative bg-gradient-to-tr from-yellow-400 to-purple-600 transform transition p-1 hover:p-2 rounded-full w-auto h-auto">
-                        <a href="#" class="block bg-zinc-900 p-1 rounded-full transform transition hover:rotate-6">
+        <div className="flex flex-col items-center space-y-1 mt-16 md:h-80">
+                <div className="relative bg-gradient-to-tr from-yellow-400 to-purple-600 transform transition p-1 hover:p-2 rounded-full w-auto h-auto">
+                        <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" target="_black" className="block bg-zinc-900 p-1 rounded-full transform transition hover:rotate-6">
                                 <img src="/profile-photo.png" alt="" className="lg:p-0 p-0 w-48 h-48 lg:h-64 lg:w-64 m-0"/>
                         </a>
                 </div>
@@ -98,12 +100,12 @@ function App() {
         </div>
 
         <div>
-                <div className="grid w-auto h-auto my-6 md:-mb-28 md:mt-10">
-                        <button className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 mx-auto text-white text-xl h-12">seguir Instagram</button>
-                        <button className="rounded-full bg-slate-50 w-auto px-5 h-12 mx-auto mt-6 text-xl">direct Instagram</button>
+                <div className="flex justify-center w-auto h-auto my-6 md:-mb-24 md:mt-10 mb-10 z-20 relative">
+                        <button className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 mx-6 text-white text-xl h-12 hover:to-pink-900">seguir <FontAwesomeIcon icon={faInstagram} /></button>
+                        <button className="rounded-full bg-slate-50 hover:bg-slate-400 w-auto px-5 h-12 mx-6 text-xl">direct <FontAwesomeIcon icon={faFacebookMessenger} /></button>
                 </div>
                 
-                <div className="bg-black md:rounded-3xl md:m-16 md:w-auto h-full place-items-center">
+                <div className="bg-black md:rounded-3xl md:m-16 md:w-auto h-full place-items-center z-0">
                         
                         <InstaFeed className=""/>
                 </div>
@@ -111,7 +113,7 @@ function App() {
         
       </section>
 
-      <footer id="footer" className="lg:p-24 p-16 pt-24 bg-zinc-900 relative">
+      <footer id="footer" className="lg:p-24 p-16 pt-24 mt-44 bg-zinc-900 relative">
                 <div>
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 w-auto items-center m-full text-gray-500">
                         <div className="col-span-1 w-auto flex">
@@ -125,7 +127,7 @@ function App() {
 
                         <div className="col-span-1 w-auto lg:mt-0 md:mt-0 mt-6 md:ml-auto">
                                 <ul className="flex lg:gap-16 md:gap-12 gap-6">
-                                    <li className="my-1 hover:text-gray-700"><a href="#Home">Home</a></li>
+                                    <li className="my-1 hover:text-gray-700"><a href="#home">Home</a></li>
                                     <li className="my-1 hover:text-gray-700"><a href="#sobre">Sobre</a></li>
                                     <li className="my-1 hover:text-gray-700"><a href="#">Missão</a></li>
                                 </ul>
@@ -137,11 +139,25 @@ function App() {
                     <div id="footer-logo-section">
                             <p>Marta Sayuri</p>
                     </div>
+
                     <div id="copyright-text">
                             &copy; Topo da praça corporations. 2022. All rights reserved.
                     </div>
+
                     <div className="flex justify-around gap-8 w-auto mt-8 md:mt-0 lg:mt-0">
-                            <img className="w-6 h-6" src="https://img.icons8.com/ios-filled/25/999999/instagram--v2.png"/><img className="w-6 h-6" src="https://img.icons8.com/ios-filled/25/999999/facebook--v1.png"/><img className="w-6 h-6" src="https://img.icons8.com/ios-filled/25/999999/linkedin--v1.png"/><img className="w-6 h-6" src="https://img.icons8.com/ios-filled/25/999999/whatsapp--v1.png"/>
+
+                        <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" target="_black">
+                                <FontAwesomeIcon icon={faInstagram} className="h-6 w-6 hover:text-blue-900"/>
+                        </a>
+
+                        <a href="https://www.facebook.com/marta.kakitani" target="_black">
+                                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6 hover:text-blue-900" />
+                        </a>
+
+                        <a href="https://www.youtube.com/MarioSa%C3%BAdeMental" target="_black">
+                                <FontAwesomeIcon icon={faFacebookMessenger} className="h-6 w-6 hover:text-green-400"/>
+                        </a>
+                            
                     </div>
                 </div>
 
@@ -150,5 +166,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App
