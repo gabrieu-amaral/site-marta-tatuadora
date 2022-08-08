@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from 'react'
-import './styles.module.css'
 
 interface IFeedItem {
     id: string;
@@ -17,7 +16,8 @@ export function InstaFeed(){
         
         //const token = import.meta.env.VITE_INSTA_TOKEN;
         const fields = "media_url,media_type,permalink"
-        const url = `https://graph.instagram.com/me/media?access_token=IGQVJXSElzSURpdVM2TlBKM2ZAnTHprUzJqd1d6eklRYW9kaEZAYSUdRVUdqdDRFT0sxSHdySVViWUR1UWRyaHRJQ2swRjR4dzhFcURNbk96VUh1SVBUY1ZAzMTdUUFQyaTVsc1VWdy1jZAEo1X296enc2MQZDZD&fields=${fields}`;
+        const Token = "IGQVJWSkM1MkpCOTYza0xsdFNfLWRpVG56dlBGbzVZAc3piNnVEbmpkazhHLTk1RTNOR21NUnVVQmwxdXNnR3R5ME9rbFd4ZAGlGQTFyN0VjbEloTFo1aWdDaVo3SXpwcGdvSVJfeG5ibDNKOXdxa1ZAwQgZDZD"
+        const url = `https://graph.instagram.com/me/media?access_token=${Token}&fields=${fields}`;
 
         const { data } = await axios.get(url);
         setFeedList(data.data.slice(0,9));

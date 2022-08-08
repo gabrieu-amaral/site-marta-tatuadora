@@ -5,6 +5,8 @@ import InstaFeed from './Insta/InstaFeed'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebookMessenger, faFacebook} from '@fortawesome/free-brands-svg-icons'
 
+import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
+
 
 function App() {
 
@@ -79,10 +81,14 @@ function App() {
         <div className="lg:p-16 p-5">
                 <h2 className="text-5xl font-bold text-orange-100 mb-2">Marta Sayuri</h2>
                 <h3 className="text-2xl font-regular text-orange-300 mb-4">tatuadora</h3>
-                <p className="text-md text-orange-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum neque officia, dolore corporis at cum illum non sit fugit praesentium quos quia odio ad repellat voluptatum molestias culpa voluptatem eaque.</p>
+                <p className="text-md text-orange-100 my-2">Formada em arquitetura, trabalhando com ilustrações há 8 anos, me encontrei na tatuagem. Em 2019 entrei como aprendiz no estúdio Madame Skull, onde aprendi muito com excelentes tatuadores que já passaram por Maringá.</p>
+
+                <p className="text-md text-orange-100 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
+
+                <p className="text-md text-orange-100 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
         </div>
 
-        <div className="flex flex-col items-center space-y-1 mt-16 md:h-80">
+        <div className="flex flex-col items-center space-y-1 m-auto">
                 <div className="relative bg-gradient-to-tr from-yellow-400 to-purple-600 transform transition p-1 hover:p-2 rounded-full w-auto h-auto">
                         <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" target="_black" className="block bg-zinc-900 p-1 rounded-full transform transition hover:rotate-6">
                                 <img src="/profile-photo.png" alt="" className="lg:p-0 p-0 w-48 h-48 lg:h-64 lg:w-64 m-0"/>
@@ -100,17 +106,34 @@ function App() {
         </div>
 
         <div>
-                <div className="flex justify-center w-auto h-auto my-6 md:-mb-24 md:mt-10 mb-10 z-20 relative">
+                <div className="flex justify-center w-auto h-auto my-6 md:-mb-24 md:mt-10 mb-10 z-40 relative">
                         <button className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 mx-6 text-white text-xl h-12 hover:to-pink-900">seguir <FontAwesomeIcon icon={faInstagram} /></button>
                         <button className="rounded-full bg-slate-50 hover:bg-slate-400 w-auto px-5 h-12 mx-6 text-xl">direct <FontAwesomeIcon icon={faFacebookMessenger} /></button>
                 </div>
                 
-                <div className="bg-black md:rounded-3xl md:m-16 md:w-auto h-full place-items-center z-0">
+                <div className="bg-black md:rounded-3xl md:m-16 md:w-auto h-full place-items-center">
                         
                         <InstaFeed className=""/>
                 </div>
         </div>
         
+      </section>
+
+      <section>
+      <MapContainer center={[-23.423931199033046, -51.936153353991489]} zoom={17} scrollWheelZoom={true} className="h-96 w-full">
+                <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                
+
+                <Marker position={[-23.423995893038715, -51.936180949857864]}>
+                        <Popup>
+                                A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                </Marker>
+                
+        </MapContainer>
       </section>
 
       <footer id="footer" className="lg:p-24 p-16 pt-24 mt-44 bg-zinc-900 relative">
