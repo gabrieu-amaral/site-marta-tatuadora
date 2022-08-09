@@ -12,7 +12,7 @@ function App() {
 
 
         const myIcon = L.icon({
-                iconUrl: ('../public/marker.png'),
+                iconUrl: ('marker.png'),
                 iconSize: [100,100],
                 iconAnchor: [32, 64],
                 popupAnchor: null,
