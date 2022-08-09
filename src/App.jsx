@@ -11,6 +11,16 @@ import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
 function App() {
 
 
+        const myIcon = L.icon({
+                iconUrl: ('../public/marker.png'),
+                iconSize: [100,100],
+                iconAnchor: [32, 64],
+                popupAnchor: null,
+                shadowUrl: null,
+                shadowSize: null,
+                shadowAnchor: null
+            });
+
   return (
     <div className="bg-zinc-900 h-full w-full m-0 box-border">
        <nav className="fixed top-0 left-0 w-full backdrop-blur-lg z-50">
@@ -77,15 +87,15 @@ function App() {
                 </div>
         </section>
 
-      <section id="sobre" className="container relative grid grid-cols-1 md:grid-cols-2 m-auto my-32 h-auto z-20 bg-zinc-900">
+      <section id="sobre" className="container relative grid grid-cols-1 md:grid-cols-2 m-auto my-32 mb-48 md:mb-32 h-auto z-20 bg-zinc-900">
         <div className="lg:p-16 p-5">
                 <h2 className="text-5xl font-bold text-orange-100 mb-2">Marta Sayuri</h2>
                 <h3 className="text-2xl font-regular text-orange-300 mb-4">tatuadora</h3>
-                <p className="text-md text-orange-100 my-2">Formada em arquitetura, trabalhando com ilustrações há 8 anos, me encontrei na tatuagem. Em 2019 entrei como aprendiz no estúdio Madame Skull, onde aprendi muito com excelentes tatuadores que já passaram por Maringá.</p>
+                <p className="text-lg text-orange-100 my-5">Formada em arquitetura, trabalhando com ilustrações há 8 anos, me encontrei na tatuagem. Em 2019 entrei como aprendiz no estúdio Madame Skull, onde aprendi muito com excelentes tatuadores que já passaram por Maringá.</p>
 
-                <p className="text-md text-orange-100 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
+                <p className="text-lg text-orange-100 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
 
-                <p className="text-md text-orange-100 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
+                <p className="text-lg text-orange-100 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
         </div>
 
         <div className="flex flex-col items-center space-y-1 m-auto">
@@ -99,9 +109,9 @@ function App() {
 
         <div className="lg:p-16 p-5 w-full mb-auto block">
         
-                <h2 className="text-5xl font-bold text-orange-100 mb-4">Faça um orçamento</h2>
-                <p className="text-md text-orange-100 my-2">Sabe aquela arte que você sempre sonhou, você pode encomendar ela, eu desenho, te mostro e depois tatuamos.</p>
-                <p className="text-md text-orange-100">Mas se você estiver sem muitas ideias, não tem problema. Tenho muitos flashs prontos para tatuar</p>
+                <h2 className="text-5xl font-bold text-orange-100 mb-4">Flashs e orçamentos</h2>
+                <p className="text-lg text-orange-100 my-5">Sabe aquela arte que você sempre sonhou ver na sua pele? Você pode encomendar ela. Eu desenho, te mostro e depois tatuamos. É só me mandar um dirct no insta que a gente combina 😁</p>
+                <p className="text-lg text-orange-100">Mas se você estiver sem muitas ideias, não tem problema. Tenho muitos flashs prontos para tatuar, dá uma olhada no meu <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" className="font-bold text-purple-400"> instagram</a>. Me segui que eu sempre posto desenhos novos.</p>
         
         </div>
 
@@ -119,21 +129,24 @@ function App() {
         
       </section>
 
-      <section>
-      <MapContainer center={[-23.423931199033046, -51.936153353991489]} zoom={17} scrollWheelZoom={true} className="h-96 w-full">
-                <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                
+      <section className="container m-auto px-5 md:px-0 shadow-red-500/50 relative z-10">
 
-                <Marker position={[-23.423995893038715, -51.936180949857864]}>
-                        <Popup>
-                                A pretty CSS3 popup. <br /> Easily customizable.
-                        </Popup>
-                </Marker>
-                
-        </MapContainer>
+        <h2 className="text-5xl font-bold text-orange-100 mb-10">Venha conhecer o estúdio onde eu tatuo 🗺</h2>
+
+                <MapContainer center={[-23.423931199033046, -51.936153353991489]} zoom={17} scrollWheelZoom={true} backround={false} className="h-96 w-full rounded-xl bg-transparent">
+                        <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://api.mapbox.com/styles/v1/alphadust/cl6llzzi3001w16n2s2i7teqf/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWxwaGFkdXN0IiwiYSI6ImNsNHI0ZmE0cDBndzIzanM2a3MzdXB3ZjMifQ.ibD0f-ykeycI-_Z9__0rxw"
+                        />
+                        
+
+                        <Marker position={[-23.423995893038715, -51.936180949857864]} icon={myIcon}>
+                                <Popup>
+                                        A pretty CSS3 popup. <br /> Easily customizable.
+                                </Popup>
+                        </Marker>
+                        
+                </MapContainer>
       </section>
 
       <footer id="footer" className="lg:p-24 p-16 pt-24 mt-44 bg-zinc-900 relative">

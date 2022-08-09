@@ -16,7 +16,7 @@ export function InstaFeed(){
         
         //const token = import.meta.env.VITE_INSTA_TOKEN;
         const fields = "media_url,media_type,permalink"
-        const Token = "IGQVJWSkM1MkpCOTYza0xsdFNfLWRpVG56dlBGbzVZAc3piNnVEbmpkazhHLTk1RTNOR21NUnVVQmwxdXNnR3R5ME9rbFd4ZAGlGQTFyN0VjbEloTFo1aWdDaVo3SXpwcGdvSVJfeG5ibDNKOXdxa1ZAwQgZDZD"
+        const Token = import.meta.env.VITE_INSTA_TOKEN
         const url = `https://graph.instagram.com/me/media?access_token=${Token}&fields=${fields}`;
 
         const { data } = await axios.get(url);
