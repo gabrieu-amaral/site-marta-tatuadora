@@ -90,12 +90,10 @@ function App() {
       <section id="sobre" className="container relative grid grid-cols-1 md:grid-cols-2 m-auto my-32 mb-48 md:mb-32 h-auto z-20 bg-zinc-900">
         <div className="lg:p-16 p-5">
                 <h2 className="text-5xl font-bold text-orange-100 mb-2">Marta Sayuri</h2>
-                <h3 className="text-2xl font-regular text-orange-300 mb-4">tatuadora</h3>
-                <p className="text-lg text-orange-100 my-5">Formada em arquitetura, trabalhando com ilustrações há 8 anos, me encontrei na tatuagem. Em 2019 entrei como aprendiz no estúdio Madame Skull, onde aprendi muito com excelentes tatuadores que já passaram por Maringá.</p>
+                <h3 className="text-2xl font-regular text-red-300 mb-4">tatuadora</h3>
+                <p className="text-lg text-red-100 my-5">Formada em arquitetura, trabalhando com ilustrações há 8 anos, me encontrei na tatuagem. Em 2019 entrei como aprendiz no estúdio Madame Skull, onde aprendi muito com excelentes tatuadores que já passaram por Maringá.</p>
 
-                <p className="text-lg text-orange-100 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
-
-                <p className="text-lg text-orange-100 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
+                <p className="text-lg text-red-100 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe perferendis, dolorum, minima commodi similique temporibus, natus eaque qui optio praesentium placeat aperiam exercitationem nostrum et quos nesciunt reprehenderit? Odio.</p>
         </div>
 
         <div className="flex flex-col items-center space-y-1 m-auto">
@@ -110,8 +108,8 @@ function App() {
         <div className="lg:p-16 p-5 w-full mb-auto block">
         
                 <h2 className="text-5xl font-bold text-orange-100 mb-4">Flashs e orçamentos</h2>
-                <p className="text-lg text-orange-100 my-5">Sabe aquela arte que você sempre sonhou ver na sua pele? Você pode encomendar ela. Eu desenho, te mostro e depois tatuamos. É só me mandar um dirct no insta que a gente combina 😁</p>
-                <p className="text-lg text-orange-100">Mas se você estiver sem muitas ideias, não tem problema. Tenho muitos flashs prontos para tatuar, dá uma olhada no meu <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" className="font-bold text-purple-400"> instagram</a>. Me segui que eu sempre posto desenhos novos.</p>
+                <p className="text-lg text-red-100 my-5">Sabe aquela arte que você sempre sonhou ver na sua pele? Você pode encomendar ela. Eu desenho, te mostro e depois tatuamos. É só me mandar um dirct no insta que a gente combina 😁</p>
+                <p className="text-lg text-red-100">Mas se você estiver sem muitas ideias, não tem problema. Tenho muitos flashs prontos para tatuar, dá uma olhada no meu <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" className="font-bold text-red-400"> instagram</a>. Me segui que eu sempre posto desenhos novos.</p>
         
         </div>
 
@@ -131,9 +129,9 @@ function App() {
 
       <section className="container m-auto px-5 md:px-0 shadow-red-500/50 relative z-10">
 
-        <h2 className="text-5xl font-bold text-orange-100 mb-10">Venha conhecer o estúdio onde eu tatuo 🗺</h2>
+        <h2 className="text-5xl font-bold text-red-100 mb-10 ml-16">Venha conhecer o estúdio onde eu tatuo 🗺</h2>
 
-                <MapContainer center={[-23.423931199033046, -51.936153353991489]} zoom={17} scrollWheelZoom={true} backround={false} className="h-96 w-full rounded-xl bg-transparent">
+                <MapContainer center={[-23.423931199033046, -51.936153353991489]} zoom={17} scrollWheelZoom={true} backround={false} className="h-96 w-full rounded-xl bg-transparent z-10 relative">
                         <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://api.mapbox.com/styles/v1/alphadust/cl6llzzi3001w16n2s2i7teqf/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWxwaGFkdXN0IiwiYSI6ImNsNHI0ZmE0cDBndzIzanM2a3MzdXB3ZjMifQ.ibD0f-ykeycI-_Z9__0rxw"
@@ -147,6 +145,14 @@ function App() {
                         </Marker>
                         
                 </MapContainer>
+
+                <a href="https://www.google.com/maps/place/Madame+Skull/@-23.4240092,-51.9361747,15z/data=!4m5!3m4!1s0x0:0x9d256c9c550d4da!8m2!3d-23.4240092!4d-51.9361747"
+                className="flex md:absolute md:right-16 md:top-16 z-40 mt-8 md:mt-0 ">
+                        <button className="rounded-full w-auto px-5 h-12 m-auto flex align-baseline bg-slate-50 hover:bg-red-200">
+                                <p className='text-xl  m-auto'>Veja no Maps</p>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg" alt="google maps icones" className="w-6 h-6 m-auto" />
+                        </button>
+                </a>
       </section>
 
       <footer id="footer" className="lg:p-24 p-16 pt-24 mt-44 bg-zinc-900 relative">
