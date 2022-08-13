@@ -116,7 +116,7 @@ function App() {
         <div>
                 <div className="flex justify-center w-auto h-auto my-6 md:-mb-24 md:mt-10 mb-10 z-40 relative">
                         <button className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 mx-6 text-white text-xl h-12 hover:to-pink-900">seguir <FontAwesomeIcon icon={faInstagram} /></button>
-                        <button className="rounded-full bg-slate-50 hover:bg-slate-400 w-auto px-5 h-12 mx-6 text-xl">direct <FontAwesomeIcon icon={faFacebookMessenger} /></button>
+                        <button className="rounded-full  bg-gradient-to-r from-zinc-400 to-slate-200 hover:to-zinc-500 w-auto px-5 h-12 mx-6 text-xl">direct <FontAwesomeIcon icon={faFacebookMessenger} /></button>
                 </div>
                 
                 <div className="bg-black md:rounded-3xl md:m-16 md:w-auto h-full place-items-center">
@@ -148,7 +148,7 @@ function App() {
 
                 <a href="https://www.google.com/maps/place/Madame+Skull/@-23.4240092,-51.9361747,15z/data=!4m5!3m4!1s0x0:0x9d256c9c550d4da!8m2!3d-23.4240092!4d-51.9361747"
                 className="flex md:absolute md:right-16 md:top-16 z-40 mt-8 md:mt-0 ">
-                        <button className="rounded-full w-auto px-5 h-12 m-auto flex align-baseline bg-slate-50 hover:bg-red-200">
+                        <button className="rounded-full w-auto px-5 h-12 m-auto flex align-baseline bg-slate-200 hover:bg-zinc-900 hover:text-gray-100">
                                 <p className='text-xl  m-auto'>Veja no Maps</p>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg" alt="google maps icones" className="w-6 h-6 m-auto" />
                         </button>
