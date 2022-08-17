@@ -56,21 +56,21 @@ function App() {
                   <div className="absolute top-0 -right-full h-screen w-8/12 bg-zinc-800 backdrop-blur-xl border-none opacity-0
                   group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
                       <ul className="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-                          <li className="hover:bg-red-500 py-4 px-6">
-                                  <a href="#home">Home</a>
-                          </li>
+                        <li class="my-5 mt-16">
+                                        <a href="#home" class="hover:red-500 py-4 px-24">Home</a>
+                        </li >
 
-                          <li className="hover:bg-red-500 py-4 px-6">
-                                  <a href="#sobre">Sobre</a>
-                          </li>
+                        <li class="my-5">
+                                <a href="#sobre" class="hover:red-500  py-4 px-24">Sobre</a>
+                        </li>
 
-                          <li className="hover:bg-red-500 py-4 px-6">
-                                  <a href="#missao">Flash's</a>
-                          </li>
+                        <li class="my-5">
+                                <a href="#missao" class="hover:red-500 py-4 px-24">Flashs</a>
+                        </li>
 
-                          <li className="hover:bg-red-500 py-4 px-6">
-                                  <a href="#footer">Contato</a>
-                          </li>
+                        <li class="my-5">
+                                <a href="#footer" class="hover:red-500  py-4 px-24">Contato</a>
+                        </li>
                       </ul>
                   </div>
               </button>
@@ -129,7 +129,7 @@ function App() {
 
       <section className="container m-auto px-5 md:px-0 shadow-red-500/50 relative z-10">
 
-        <h2 className="text-5xl font-bold text-red-100 mb-10 ml-16">Venha conhecer o estúdio onde eu tatuo 🗺</h2>
+        <h2 className="md:text-5xl text-4xl font-bold text-red-100 mb-10 mdml-16">Venha conhecer o estúdio onde eu tatuo 🗺</h2>
 
                 <MapContainer center={[-23.423931199033046, -51.936153353991489]} zoom={17} scrollWheelZoom={true} backround={false} className="h-96 w-full rounded-xl bg-transparent z-10 relative">
                         <TileLayer
