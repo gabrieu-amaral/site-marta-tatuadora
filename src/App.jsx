@@ -30,21 +30,25 @@ function App() {
                 </a>
           
               <ul className="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
-                  <li className="hover:bg-red-500 py-4 px-6">
-                          <a href="#home">Home</a>
-                  </li>
+                  <a href="#home"><li className="hover:bg-red-500 py-4 px-6">
+                          Home
+                  </li></a>
 
-                  <li className="hover:bg-red-500  py-4 px-6">
-                          <a href="#sobre">Sobre</a>
+                 <a href="#sobre">
+                 <li className="hover:bg-red-500  py-4 px-6">
+                          Sobre
                   </li>
+                 </a>
 
                   <li className="hover:bg-red-500  py-4 px-6">
                           <a href="#missao">Flash's</a>
                   </li>
 
+                  <a href="#footer">
                   <li className="hover:bg-red-500 py-4 px-6">
-                          <a href="#footer">Contato</a>
+                          Contato
                   </li>
+                  </a>
               </ul>
 
               {/*mobile menu*/}
@@ -82,8 +86,8 @@ function App() {
 
         
                 <div className="container flex-col mx-auto text z-30 relative h-auto align-middle lg:pt-96 pt-20 lg:pl-5">
-                <h1 className="text-5xl lg:text-8xl text-cyan-50 font-extrabold px-6 md:p-0 tracking-wide">Levando <strong className="text-red-500">arte</strong> a sério</h1>
-                <p className="lg:text-3xl text-lg text-cyan-50 px-6 font-extralight md:p-0 lg:mt-5 my-5 tracking-wide">tatuando com excelência desde 2018.</p>
+                <h1 className="text-5xl lg:text-8xl text-cyan-50 font-extrabold px-6 md:p-0 tracking-wide">Marta Sayuri <strong className="text-red-500">Tattoo</strong></h1>
+                <p className="lg:text-3xl text-lg text-cyan-50 px-6 font-extralight md:p-0 lg:mt-5 my-5 tracking-wide"> Maringá, Paraná.</p>
                 </div>
         </section>
 
