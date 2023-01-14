@@ -15,7 +15,7 @@ export function InstaFeed(){
     async function getInstaFeed(){
         
         const fields = "media_url,media_type,permalink"
-        const Token = import.meta.`${process.env.INSTAGRAM_TOKEN}`
+        const Token = import.meta.process.env.VITE_INSTAGRAM_TOKEN
         const url = `https://graph.instagram.com/me/media?access_token=${Token}&fields=${fields}`;
 
         const { data } = await axios.get(url);
