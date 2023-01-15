@@ -122,7 +122,7 @@ function App() {
                         <a href="https://www.instagram.com/martasayuritattoo/?theme=dark" target="_black">
                                 <button className="rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 mx-6 text-white text-xl h-12 hover:to-pink-900">seguir <FontAwesomeIcon icon={faInstagram} /></button>
                         </a>
-                        <a href="https://web.whatsapp.com/send?phone=554499235315" target="_black">
+                        <a href="https://api.whatsapp.com/send/?phone=5544999235315&text=Ol%C3%A1%2C+gostaria+de+fazer+um+or%C3%A7amento+de+tattoo%21&type=phone_number&app_absent=0" target="_black">
                                 <button className="rounded-full  bg-gradient-to-r from-zinc-400 to-slate-200 hover:to-zinc-500 w-auto px-5 h-12 mx-6 text-xl">direct<FontAwesomeIcon icon={faWhatsapp} className="pl-2" /></button>
                         </a>
                 </div>
