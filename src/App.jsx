@@ -146,7 +146,7 @@ function App() {
                         />
                         
 
-                        <Marker position={[-23.423995893038715, -51.936180949857864]} icon={myIcon}>
+                        <Marker position={[-23.433399258902924, -51.93664639204321]} icon={myIcon}>
                                 <Popup>
                                         A pretty CSS3 popup. <br /> Easily customizable.
                                 </Popup>
@@ -154,7 +154,7 @@ function App() {
                         
                 </MapContainer>
 
-                <a href="https://www.google.com/maps/place/Madame+Skull/@-23.4240092,-51.9361747,15z/data=!4m5!3m4!1s0x0:0x9d256c9c550d4da!8m2!3d-23.4240092!4d-51.9361747"
+                <a href="https://www.google.com/maps/place/Sabre+Tattoo/@-23.432051,-51.9398058,16.54z/data=!4m9!1m2!2m1!1sest%C3%BAdio+sabre+tattoo!3m5!1s0x94ecd16fbcc3ebad:0xfa98534f6013f30b!8m2!3d-23.4334918!4d-51.9366715!15sChVlc3TDumRpbyBzYWJyZSB0YXR0b2-SAQphcnRfc3R1ZGlv4AEA"
                 className="flex md:absolute md:right-16 md:top-16 z-40 mt-8 md:mt-0" target="_black">
                         <button className="rounded-full w-auto px-5 h-12 m-auto flex align-baseline bg-slate-200 hover:bg-zinc-900 hover:text-gray-100">
                                 <p className='text-xl  m-auto'>Veja no Maps</p>
